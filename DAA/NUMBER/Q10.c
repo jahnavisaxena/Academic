@@ -7,7 +7,7 @@ void tenthPattern(int n)
         for(int j=1;j<=i;j++)
         {
             printf("%d ",counter);
-            counter += 2;
+            counter +=2;
         }
         printf("\n");
     }
