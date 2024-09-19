@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int data;
+    struct node *next;
+};
+struct node *top=NULL;
+void print()
+{
+    struct node *temp=top;
+    printf("Stack is:\n");
+    while(temp!=NULL)
+    {
+        printf("%d\t",temp->data);
+        temp=temp->next;
+    }
+    printf("\n");
+}
+struct node *create(int x)
+{
+    struct node *new=(struct node *)malloc(sizeof(struct node));
+    new->data=x;
+    new->next=NULL;
+    return new;
+}
+void push(int x)
+{
+    struct node *new=create(x);
+    new->next=top;
+    top=new;
+}
+void pop()
+{
+    struct node *new;
+    if(top==NULL)
+    {
+        printf("Underflow");
+        return;
+    }
+    new=top;
+    top=top->next;
+    free(new);
+    
+}
+void main()
+{
+    push(4);print();
+    push(45);print();
+    push(2);print();
+    push(90);print();
+    pop();print();
+
+}
