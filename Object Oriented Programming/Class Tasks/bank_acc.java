@@ -28,6 +28,11 @@ Step 3: Create the main() Method
      - Interest rate = 3.5%
    - Call `accountInfo()` on `myAccount`.
 
+
+   advantages
+   -> security
+   -> data privacy
+   -> data integrity
  */
 public class task_3 {
     public static void main(String[] args) {
