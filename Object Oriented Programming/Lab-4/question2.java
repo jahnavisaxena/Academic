@@ -11,12 +11,23 @@ public class question2 {
         cp.name ="jahnavi";
         cp.age = 20;
         cp.position ="batsman";
+        System.out.println("Name of the player "+cp.name + " Age of the player "+cp.age + " Position of the player "+cp.position);
         Football_player fp = new Football_player();
         fp.play();
         fp.train();
+        fp.name ="tanay";
+        fp.age = 22;
+        fp.position ="goalkeeper";
+        System.out.println("Name of the player "+fp.name + " Age of the player "+fp.age + " Position of the player "+fp.position);
+
         Hockey_player hp = new Hockey_player();
         hp.play();
         hp.train();
+        hp.name = "sai";
+        hp.age = 21;
+        hp.position = "defender";
+        System.out.println("Name of the player "+hp.name + " Age of the player "+hp.age + " Position of the player "+hp.position);
+
     }
 }
 abstract class Player{
