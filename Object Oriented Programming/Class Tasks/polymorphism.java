@@ -35,3 +35,28 @@ class deer extends animal{
         System.out.println("eats grass");
     }
 }
+public class polymorphism {
+    public static void main(String[] args) {
+        Laptop l = new lenovo();
+        l.copy();
+        Laptop d = new dell();
+        d.copy();
+    }
+}
+
+abstract class Laptop{
+abstract void copy();
+}
+class lenovo extends Laptop{
+    @Override
+    void copy(){
+        System.out.println("copying");
+    }
+}
+
+class dell extends Laptop{
+    @Override
+    void copy(){
+        System.out.println("copying dell");
+    }
+}
