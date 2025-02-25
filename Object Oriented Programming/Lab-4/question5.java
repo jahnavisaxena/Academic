@@ -1,7 +1,7 @@
 /*
  2.	Design a Java class Employee with attributes name, empid, and 
  salary. Implement a default constructor, a parameterized constructor, 
- and methods to return the employee’s name and salary.
+ and methods to return the employee’s name and slary.
   Add a method increaseSalary(double percentage) to raise the salary by a
    user-specified percentage. Create a subclass Manager with an additional 
    instance variable department. Develop a test program to validate these
