@@ -14,7 +14,7 @@ public class question5 {
         int second = -1;
         for(int i=1;i<arr.length;i++)
         {
-            if(largest_num<arr[i])
+           if(largest_num<arr[i])
             {
                 largest_num = arr[i];
                 
@@ -22,7 +22,7 @@ public class question5 {
         }
         for(int i=0;i<arr.length;i++)
         {
-            if(second < arr[i] && arr[i]!=largest_num)
+            elif(second < arr[i] && arr[i]!=largest_num)
             {
                 second = arr[i];
             }
